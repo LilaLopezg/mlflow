@@ -46,3 +46,18 @@ screen -r python-server -X quit #Cerrar una sesión particular, desde la termina
 
 python3 train_mlflow.py
 ```
+
+
+# 6) En resumen
+
+ 1. Carga un dataset limpio.
+ 2. Separar variables.
+ 3. Entrena un modelo de regresión logística.
+ 4. Calcula precisión.
+ 5. Guarda parámetros, métricas y modelo en MLFlow.
+ 6. Registra y versiona el modelo en el Model Registry.
+ 7. Carga el modelo desde Mlflow. 
+ 8. Genera predicciones y tabla comparativa.  
+
+
+
