@@ -4,13 +4,21 @@ MLflow es una herramienta muy útil para gestionar experimentos de machine learn
 Usa python3 (no python), también se crea un entorno virtual
 
 ```bash
-#Creo el entorno virtual - mlflow
+#Creo el entorno virtual - mlflow - Mac
 python3 --version
 which python3
 brew install python
 python3 -m venv .venv-mlflow
 source .venv-mlflow/bin/activate # Activo el aentorno virtual
 deactivate #Desactivo el entorno virtual
+
+#Creo entorno virtual virtual en ubuntu
+python3 --version
+sudo apt update
+sudo apt install python3-venv
+python3 -m venv .venv-mlflow
+source .venv-mlflow/bin/activate
+deactivate
 
 ```
 ### 2) Instalar MLflow y dependencias mínimas
@@ -43,7 +51,7 @@ screen -r python-server -X quit #Cerrar una sesión particular, desde la termina
 
 ```bash
 #Ejecuto el script, para entrenar los datos del modelo y definir las métricas
-
+python3 train/train_mlflow.py #Subir una carpeta
 python3 train_mlflow.py
 ```
 
@@ -57,7 +65,6 @@ python3 train_mlflow.py
  5. Guarda parámetros, métricas y modelo en MLFlow.
  6. Registra y versiona el modelo en el Model Registry.
  7. Carga el modelo desde Mlflow. 
- 8. Genera predicciones y tabla comparativa.  
-
+ 8. Genera predicciones y tabla comparativa.
 
 
